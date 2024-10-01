@@ -1,0 +1,229 @@
+/*Universal Styles*/
+
+html * {
+    box-sizing: border-box;
+    font-family: "Source Code Pro";
+
+}
+
+body {
+    background-color:#102245;
+    margin: 20px 25%;
+    font-size: 16px;
+}
+
+/*Header*/
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.profile-picture {
+    display: flex;
+    flex-direction: row;
+    justify-content:  center;
+}
+
+.rp-img {
+    height: 15.625rem;
+    width: 15.625rem;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 1.25rem;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.125rem;
+    margin: 0;
+    padding: 0.5rem 0;
+
+}
+
+.position  {
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding-bottom: 1.5rem;
+}
+
+
+/*Main Content*/
+
+.info {
+    display: flex;
+    flex-direction: column;
+    background-color: #e2e2d3;
+    padding: 50px;
+    border-radius: 50px 50px;
+    gap: 30px;
+    position: relative;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    gap: 0.625rem;
+    flex-wrap: wrap;
+}
+
+/*Personal Details, skills, education */
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.section-title {
+    padding: 0.625rem 0.625rem;
+    color:#102245;
+    font-weight: bold;
+    letter-spacing: 0.125rem;
+    text-align: start;
+    font-size: 1.17rem;
+}
+
+
+.section-info {
+    list-style: none;
+    padding-top: 0.325rem;
+    padding-bottom: 1rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    margin: 0;
+    color: black;
+    text-align:start;
+    font-size: 0.875rem;
+}
+
+
+.sub-title {
+    letter-spacing: 0.05rem;
+    color:#102245;
+    padding-bottom: 0.5rem;
+}
+
+
+/* Working History */
+
+.section-title-wh {
+    display: flex;
+    padding: 0.625rem 0.625rem;
+    color:#102245;
+    font-weight: bold;
+    letter-spacing: 0.125rem;
+    text-align: start;
+    justify-content: center;
+    font-size: 1.17rem;
+}
+
+
+.info-working {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-parent {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.project-title {
+    font-weight: bold;
+}
+
+
+.project-title,
+.technologies,
+.year,
+.role {
+    color:#102245;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.year {
+    padding-bottom: 0.3rem;
+}
+
+.company {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex-basis: 40%;
+}
+
+.company-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    font-size: 0.875rem;
+    padding: 0.625rem
+}
+
+.company-title {
+    color:#102245;
+    letter-spacing: 0.05rem;
+    padding-bottom: 0.5rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.project-parent {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    padding: 0.625rem
+}
+
+.project h4 {
+    color:#102245;
+    font-size: 1rem;
+}
+
+.project p {
+    font-size: 0.875rem;
+    text-align: start;
+}
+
+.project .year {
+    font-size:  0.75rem;
+}
+
+
+
+p, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.links {
+    text-decoration: none; 
+    color: #102245; 
+    transition: color 0.3s ease; 
+}
+
+.links:hover {
+    color: #007BFF;
+}
