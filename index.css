@@ -213,7 +213,6 @@ body {
 }
 
 
-
 p, h2, h3, h4, h5, h6 {
     margin: 0;
 }
@@ -226,4 +225,100 @@ p, h2, h3, h4, h5, h6 {
 
 .links:hover {
     color: #007BFF;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 20px 5%;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .info-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .info {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .info-working {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .company {
+        flex-basis: 100%;
+    }
+}
+
+/* Para tabletas (entre 768px y 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        margin: 20px 10%;
+    }
+
+    .header {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .profile-picture {
+        margin-right: 2rem;
+    }
+
+    .info-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .info {
+        padding: 40px;
+        border-radius: 30px;
+    }
+
+    .info-working {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .company {
+        flex-basis: 100%;
+    }
+}
+
+/* Para pantallas grandes (PC y más) */
+@media only screen and (min-width: 1025px) {
+    body {
+        margin: 20px 25%;
+    }
+
+    .info {
+        padding: 50px;
+        border-radius: 50px;
+    }
+
+    .info-container {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .info-working {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .company {
+        flex-basis: 45%;
+    }
 }
